@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Options } from 'easymde';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,8 +12,9 @@ export class AppComponent {
 
   sampleText = 'Hello World!';
 
-  covalentEditorOpts: any = {
+  covalentEditorOpts: Options = {
     lineWrapping: true,
-    toolbar: false,
+    showIcons: ['code', 'table'],
+    toolbar: true,
   };
 }
