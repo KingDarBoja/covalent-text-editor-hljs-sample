@@ -14,7 +14,29 @@ export class AppComponent {
 
   covalentEditorOpts: Options = {
     lineWrapping: true,
-    showIcons: ['code', 'table'],
-    toolbar: true,
+    toolbar: [
+      'bold',
+      'italic',
+      'heading',
+      '|',
+      'quote',
+      'unordered-list',
+      'ordered-list',
+      '|',
+      'code',
+      '|',
+      'link',
+      'image',
+      'table',
+      '|',
+      'preview',
+      'side-by-side',
+      'fullscreen',
+      '|',
+      'guide'
+    ],
+    renderingConfig: {
+      codeSyntaxHighlighting: true
+    }
   };
 }
