@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { CovalentTextEditorModule } from '@covalent/text-editor';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    CovalentTextEditorModule
+    CovalentTextEditorModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
