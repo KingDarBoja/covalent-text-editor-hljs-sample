@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Options } from 'easymde';
+import hljs from './highlight.config';
 
 @Component({
   selector: 'app-root',
@@ -36,7 +37,8 @@ export class AppComponent {
       'guide'
     ],
     renderingConfig: {
-      codeSyntaxHighlighting: true
+      codeSyntaxHighlighting: true,
+      hljs
     }
   };
 }
