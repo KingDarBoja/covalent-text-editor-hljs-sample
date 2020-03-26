@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@highlightjs/highlight.js/styles/atom-one-dark.css"
             ],
@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "covalent-editor-fu"
+  "defaultProject": "covalent-editor-fu",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
